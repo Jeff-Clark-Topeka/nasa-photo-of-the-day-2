@@ -10,7 +10,6 @@ const PhotoInfo = styled.div`
 `;
 
 const PhotoDesc = styled.p`
-    border: 1px solid red;
     display: flex;
     margin: 20px 15px;
 `
