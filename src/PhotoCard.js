@@ -1,4 +1,19 @@
 import React from "react";
+import styled from "styled-components";
+
+const PhotoInfo = styled.div`
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 202px;
+`;
+
+const PhotoDesc = styled.p`
+    border: 1px solid red;
+    display: flex;
+    margin: 20px 15px;
+`
 
 const PhotoCard = props => {
 
@@ -8,10 +23,10 @@ const PhotoCard = props => {
         <div>
             <h2>{props.photo.title}</h2>
             <img src={props.photo.url}/>
-            <div>
-                <p>{props.photo.explanation}</p>
+            <PhotoInfo>
+                <PhotoDesc>{props.photo.explanation}</PhotoDesc>
                 <p>{props.photo.date}</p>
-            </div>
+            </PhotoInfo>
         </div>
     )
 };

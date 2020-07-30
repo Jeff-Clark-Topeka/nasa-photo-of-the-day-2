@@ -1,12 +1,17 @@
 import React from "react";
 import PhotoList from "./PhotoList"
 import "./App.css";
+import styled from "styled-components"
+
+const AppBg = styled.div`
+  background: gray;
+`
 
 function App() {
   return (
-    <div className="App">
+    <AppBg className="App">
       <PhotoList />
-    </div>
+    </AppBg>
   );
 }
 
