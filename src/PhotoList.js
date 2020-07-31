@@ -8,7 +8,7 @@ const PhotoList = () => {
     
     useEffect(() => {
         axios
-            .get("https://api.nasa.gov/planetary/apod?api_key=kprPmclngiQdPbYhAIQ93eCLFhvpkiej7Aagd6PU")
+            .get("https://api.nasa.gov/planetary/apod?date=2020-07-30&api_key=DSknYOcnZuW6yxKnIYFLAhRhF77B9nZmDp9NKEeM")
             .then(response => {
                 console.log(response);
                 setPhotos(response.data);
